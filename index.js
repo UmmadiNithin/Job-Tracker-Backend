@@ -14,8 +14,7 @@ connectDB();
 // app.use(cors());
 app.use(express.json());
 app.use(cors({
-  origin: 'job-tracker-frontend-2nrsu0afz-nithins-projects-c73b5d21.vercel.app', // your frontend domain
-  credentials: true, // if you're using cookies or auth headers
+  origin: '*'
 }));
 
 app.use("/api/auth", authRoutes); 
